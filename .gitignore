@@ -129,4 +129,6 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
-switch-task.js
+abstract.js
+classList.js
+chat-gpt-tasks.js

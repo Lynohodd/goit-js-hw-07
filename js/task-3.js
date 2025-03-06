@@ -1,7 +1,12 @@
-function getElementWidth(content, padding, border) {
-  const elementWidth =
-    Number.parseFloat(content) +
-    Number.parseFloat(padding) * 2 +
-    Number.parseFloat(border) * 2;
-  return elementWidth;
+const input = document.querySelector('#name-input');
+let output = document.querySelector('#name-output');
+
+input.addEventListener('input', handleInput);
+
+function handleInput(event) {
+  const inputName = event.target.value.trim();
+  output.textContent = inputName;
+  if (inputName === '') {
+    output.textContent = 'Anonymous';
+  }
 }
