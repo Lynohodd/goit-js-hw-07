@@ -12,8 +12,8 @@ const boxes = document.querySelector('#boxes');
 
 btnCreate.addEventListener('click', createBoxes);
 
-function createBoxes(amount) {
-  amount = input.value;
+function createBoxes() {
+  const amount = input.value;
   let boxSize = 30;
   let boxesHTML = '';
   boxes.innerHTML = '';
